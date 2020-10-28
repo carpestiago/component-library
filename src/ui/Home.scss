@@ -1,0 +1,62 @@
+.container-fluid {
+    padding-right: unset;
+    padding-left: unset;
+}
+.tela-home {
+
+    
+
+    .col-barra-superior {
+
+        .box-barra-superior {
+            height: 80px;
+            background-color: #f5f5f5;
+        }
+    }
+
+    .linha-conteudo {
+        .menu-lateral {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            width: 50px;
+            overflow: hidden;
+            top:0;
+            bottom:0;
+            height:650px;;
+            left:0;
+            z-index: 1000;
+
+            .icone-menu-lateral {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                div {
+                    margin-left: 58px;
+                }
+            }
+            .MuiButton-root {
+                visibility: hidden;
+            }
+            
+        }
+        .menu-lateral:hover {
+            display: flex;
+            width: 200px;
+            overflow: visible;
+            .MuiButton-root {
+                width: 100%;
+                text-transform: unset;
+                justify-content: flex-end;
+                margin-left: unset;
+                visibility: unset;
+                padding-right: 10px;
+            }
+        }
+
+
+
+    }
+
+}

@@ -1,0 +1,12 @@
+@import './../commonStyles.scss';
+
+.input-box {
+  width: 100%;
+
+  & .MuiTextField-root {
+      width: 100%;
+  }
+
+  @include handle-error-message-for-textfields();
+
+}

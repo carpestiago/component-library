@@ -1,0 +1,26 @@
+$error-message-min-height: 20px;
+$margin-bottom-if-no-error: 34px;
+
+@mixin error-message {
+    min-height: $error-message-min-height;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+@mixin handle-error-message-for-textfields {
+    //mantem a margem embaixo, senão tiver erro
+    .MuiInputBase-root:not(.Mui-error) {
+        margin-bottom: $margin-bottom-if-no-error;
+    }
+
+    .MuiInputBase-root.Mui-error {
+        margin-bottom: 0;
+        & ~ .MuiFormHelperText-root {
+            @include error-message();
+        }
+    }
+}
+
+.MuiFormHelperText-root.error-message {
+    @include error-message();
+}
